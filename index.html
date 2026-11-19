@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Praveen Govindaraj · hi 👋</title>
+<meta name="description" content="Praveen Govindaraj: Lead AI Engineer in Singapore, creator of the Neam agentic AI language, builder of Sales Mama, author, speaker, YouTuber. Also: football, piano and violin.">
+<meta name="theme-color" content="#16131F">
+<meta property="og:title" content="Praveen Govindaraj · hi 👋">
+<meta property="og:description" content="Lead AI Engineer · creator of Neam · builder of Sales Mama · football ⚽ piano 🎹 violin 🎻">
+<meta property="og:image" content="https://praveengovianalytics.github.io/aboutme.io/avatar.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23C8F031'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' font-family='Arial' font-weight='800' fill='%2316131F'%3EPG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  /* Colours: the Sales Mama palette (see the "My colour codes" tile). */
+  :root {
+    --ink: #16131F; --ink-2: #221D30; --ink-3: #2C2838; --line: #3A3450; --dim: #B9B4CC; --soft: #E9E6F2;
+    --lime: #C8F031; --violet: #6D28D9; --lilac: #A78BFA; --blue: #1D4ED8; --teal: #0F766E; --pink: #BE185D; --orange: #C2410C; --green: #15803D; --sun: #FBBF24;
+    --display: 'Bricolage Grotesque', 'Geist', system-ui, sans-serif; --ui: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif; --mono: 'Geist Mono', ui-monospace, Menlo, monospace;
+    --ease: cubic-bezier(.2,.8,.2,1);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; min-height: 100vh; background: var(--ink); color: #fff; font: 16px/1.55 var(--ui); -webkit-font-smoothing: antialiased; overflow-x: hidden;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22'%3E%3Ccircle cx='1' cy='1' r='1' fill='%232C2838'/%3E%3C/svg%3E"); }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 3px solid var(--lime); outline-offset: 3px; border-radius: 10px; }
+  .i { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+  .emoji-float { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+  .emoji-float span { position: absolute; font-size: 28px; opacity: .14; animation: drift 18s linear infinite; }
+  @keyframes drift { from { transform: translateY(110vh) rotate(0); } to { transform: translateY(-20vh) rotate(360deg); } }
+
+  .slide { position: relative; z-index: 1; max-width: 1360px; margin: 0 auto; padding: 28px 24px 18px; }
+  .bento { display: grid; gap: 14px; grid-template-columns: 1.35fr 1fr 1fr 1fr; grid-auto-rows: minmax(0, auto); }
+  .tile { position: relative; border-radius: 26px; padding: 22px; background: var(--ink-2); border: 1px solid var(--line); overflow: hidden;
+    transition: transform 300ms var(--ease), box-shadow 300ms var(--ease); animation: pop 700ms var(--ease) both; }
+  .tile:hover { transform: translateY(-4px) rotate(-.3deg); box-shadow: 0 24px 50px -20px rgba(0,0,0,.8); }
+  @keyframes pop { from { opacity: 0; transform: translateY(18px) scale(.98); } }
+  .tile:nth-child(2) { animation-delay: 80ms; } .tile:nth-child(3) { animation-delay: 140ms; } .tile:nth-child(4) { animation-delay: 200ms; }
+  .tile:nth-child(5) { animation-delay: 260ms; } .tile:nth-child(6) { animation-delay: 320ms; } .tile:nth-child(7) { animation-delay: 380ms; } .tile:nth-child(8) { animation-delay: 440ms; }
+  .tag { display: inline-flex; align-items: center; gap: 6px; font: 600 11.5px var(--mono); letter-spacing: 1.2px; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; background: rgba(255,255,255,.08); color: var(--dim); }
+  h1, h2, h3 { font-family: var(--display); margin: 0; letter-spacing: -.03em; line-height: 1.02; }
+  h2 { font-size: 26px; margin: 12px 0 6px; }
+  p { margin: 0; }
+  .muted { color: var(--dim); }
+  .go { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-weight: 700; font-size: 14px; }
+  .go .i { width: 15px; height: 15px; transition: transform 200ms var(--ease); }
+  a:hover .go .i, .go:hover .i { transform: translate(2px, -2px); }
+
+  /* Hero */
+  .hero { grid-row: span 2; background: var(--ink-2); display: flex; flex-direction: column; gap: 14px; }
+  .me { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+  .avatar { position: relative; width: 132px; height: 132px; flex: none; border: 0; padding: 0; background: none; cursor: pointer; border-radius: 50%; }
+  .avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 5px solid var(--lime); box-shadow: 0 0 0 6px var(--ink-2), 0 0 0 8px var(--violet); transition: transform 400ms var(--ease); }
+  .avatar:hover img { transform: rotate(-6deg) scale(1.04); }
+  .avatar .wave { position: absolute; right: -6px; bottom: 4px; font-size: 34px; transform-origin: 70% 70%; animation: wave 2.4s ease-in-out infinite; }
+  @keyframes wave { 0%, 60%, 100% { transform: rotate(0); } 10%, 30% { transform: rotate(16deg); } 20%, 40% { transform: rotate(-10deg); } }
+  .hello { font: 600 15px var(--mono); color: var(--lime); }
+  .hero h1 { font-size: clamp(38px, 3.6vw, 52px); }
+  .hero h1 em { font-style: normal; color: var(--lime); }
+  .roles { display: flex; flex-wrap: wrap; gap: 8px; }
+  .role { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px; font: 600 13.5px var(--ui); color: var(--ink); }
+  .r1 { background: #E5EDFF; } .r2 { background: #EFE8FF; } .r3 { background: #FFEDE0; } .r4 { background: #E2F6E8; } .r5 { background: #FFE6F1; }
+  .bio { color: var(--soft); font-size: 15.5px; }
+  .bio b { color: var(--lime); font-weight: 600; }
+  .socials { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: auto; }
+  .soc { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 16px; border: 1px solid var(--line); background: rgba(255,255,255,.03); font-weight: 600; font-size: 14px;
+    transition: background 200ms, transform 200ms var(--ease), border-color 200ms; }
+  .soc:hover { transform: translateY(-2px); }
+  .soc .ic { width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; color: #fff; flex: none; }
+  .soc > span:last-child { min-width: 0; }
+  .soc small { display: block; font: 500 11.5px var(--mono); color: var(--dim); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .s-gh .ic { background: #333; } .s-gh:hover { border-color: #fff; }
+  .s-in .ic { background: #0A66C2; } .s-in:hover { border-color: #0A66C2; }
+  .s-yt .ic { background: #FF0033; } .s-yt:hover { border-color: #FF0033; }
+  .s-pod .ic { background: #9933CC; } .s-pod:hover { border-color: #B465E5; }
+
+  /* Neam */
+  .neam { grid-column: span 2; background: var(--violet); border-color: transparent; }
+  .neam .tag { background: rgba(255,255,255,.16); color: #fff; }
+  .neam h2 { font-size: 34px; }
+  .neam p { color: #EDE6FF; }
+  .code { margin-top: 14px; background: rgba(22,19,31,.55); border-radius: 16px; padding: 12px 14px; font: 500 13px/1.6 var(--mono); color: #E9E6F2; white-space: pre; overflow: hidden; }
+  .code .k { color: var(--lime); } .code .s { color: #FDE7A8; } .code .c { color: #B9B4CC; }
+  .neam .links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+  .neam .go { color: var(--lime); }
+  /* Sales Mama */
+  .mama { background: var(--ink); border: 2px solid var(--lime); }
+  .mama .logo { width: 44px; height: 44px; border-radius: 13px; background: var(--lime); color: var(--ink); display: grid; place-items: center; font: 800 17px var(--display); }
+  .mama h2 em { font-style: normal; color: var(--lime); }
+  .score { display: flex; align-items: baseline; gap: 8px; margin-top: 10px; }
+  .score b { font: 800 46px/1 var(--display); color: var(--lime); letter-spacing: -.04em; }
+  .score span { font-size: 12.5px; color: var(--dim); line-height: 1.3; }
+  .mama .go { color: var(--lime); }
+
+  /* Ebooks */
+  .books { grid-column: span 2; background: #FFFDF5; color: var(--ink); border-color: transparent; }
+  .books .tag { background: #FDF0DC; color: #713F12; }
+  .books h2 { color: var(--ink); }
+  .shelf { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+  .book { position: relative; border-radius: 6px 14px 14px 6px; padding: 12px 10px 10px 14px; min-height: 148px; display: flex; flex-direction: column; color: #fff;
+    box-shadow: inset 6px 0 0 rgba(0,0,0,.25), 0 10px 20px -10px rgba(0,0,0,.5); transition: transform 300ms var(--ease); }
+  .book:hover { transform: translateY(-6px) rotate(-2deg); }
+  .book .e { font-size: 26px; }
+  .book b { font: 800 15px/1.15 var(--display); margin-top: 6px; letter-spacing: -.01em; }
+  .book small { margin-top: auto; font: 600 10.5px var(--mono); opacity: .8; text-transform: uppercase; letter-spacing: .6px; }
+  .b1 { background: var(--violet); } .b2 { background: var(--teal); } .b3 { background: var(--orange); } .b4 { background: var(--blue); }
+
+  /* Talks & podcast */
+  .talks { background: var(--pink); border-color: transparent; }
+  .talks .tag { background: rgba(255,255,255,.16); color: #fff; }
+  .talk { display: flex; gap: 10px; align-items: flex-start; padding: 9px 0; border-top: 1px solid rgba(255,255,255,.18); font-size: 14px; color: #FFE6F1; }
+  .talk:first-of-type { border-top: 0; }
+  .talk .e { font-size: 20px; line-height: 1.2; }
+  .talk b { display: block; color: #fff; font-size: 14.5px; }
+
+  /* YouTube */
+  .yt { background: #FF0033; border-color: transparent; }
+  .yt .tag { background: rgba(255,255,255,.2); color: #fff; }
+  .yt h2 { font-size: 30px; }
+  .yt p { color: #FFE0E6; }
+  .yt .play { position: absolute; right: -18px; bottom: -22px; font-size: 120px; opacity: .22; transform: rotate(-12deg); }
+  .yt .go { color: #fff; }
+
+  /* Hobbies */
+  .fun { grid-column: span 2; background: var(--lime); color: var(--ink); border-color: transparent; }
+  .fun .tag { background: rgba(22,19,31,.1); color: var(--ink); }
+  .fun h2 { color: var(--ink); }
+  .hobbies { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+  .hobby { background: rgba(255,255,255,.55); border-radius: 18px; padding: 14px; text-align: center; cursor: pointer; border: 0; color: var(--ink); font: inherit; transition: transform 200ms var(--ease), background 200ms; }
+  .hobby:hover { background: #fff; transform: translateY(-3px); }
+  .hobby .e { display: block; font-size: 44px; line-height: 1.1; }
+  .hobby b { display: block; font: 800 17px var(--display); margin-top: 6px; }
+  .hobby small { font-size: 12.5px; color: #3F3A4F; }
+  .hobby.ball .e { animation: bounce 1.4s cubic-bezier(.3,0,.5,1) infinite; }
+  @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px) rotate(180deg); } }
+  .hobby.piano .e, .hobby.violin .e { transition: transform 300ms var(--ease); }
+  .hobby.piano:hover .e { transform: scale(1.12) rotate(-6deg); } .hobby.violin:hover .e { transform: scale(1.12) rotate(8deg); }
+  .note { position: fixed; z-index: 50; pointer-events: none; font-size: 26px; animation: note 1.2s ease-out forwards; }
+  @keyframes note { to { transform: translate(var(--dx), -120px) rotate(var(--r)); opacity: 0; } }
+
+  /* Colours */
+  .colors { background: var(--ink-2); }
+  .swatches { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 12px; }
+  .sw { display: flex; align-items: center; gap: 8px; padding: 6px; border-radius: 12px; border: 1px solid var(--line); background: rgba(255,255,255,.03); cursor: pointer; color: #fff; font: 600 12.5px var(--mono); text-align: left; transition: transform 150ms var(--ease); }
+  .sw:hover { transform: scale(1.03); }
+  .sw i { width: 26px; height: 26px; border-radius: 8px; flex: none; box-shadow: inset 0 0 0 1px rgba(255,255,255,.15); }
+  .sw span { display: flex; flex-direction: column; line-height: 1.2; }
+  .sw small { font: 500 10.5px var(--ui); color: var(--dim); }
+  .toast { position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 30px); opacity: 0; background: var(--lime); color: var(--ink); font: 700 14px var(--ui); padding: 10px 18px; border-radius: 999px; transition: all 250ms var(--ease); z-index: 60; }
+  .toast.on { transform: translate(-50%, 0); opacity: 1; }
+
+  .foot { position: relative; z-index: 1; text-align: center; padding: 6px 24px 26px; color: var(--dim); font-size: 13px; }
+  .foot a { color: var(--lime); }
+
+  @media (max-width: 1099px) {
+    .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hero { grid-column: span 2; grid-row: auto; }
+    .neam, .books, .fun { grid-column: span 2; }
+  }
+  @media (max-width: 679px) {
+    .slide { padding: 14px 12px; }
+    .bento { grid-template-columns: minmax(0, 1fr); }
+    .hero, .neam, .books, .fun { grid-column: auto; }
+    .shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hobbies { grid-template-columns: minmax(0, 1fr); }
+    .hobby { display: grid; grid-template-columns: 56px 1fr; text-align: left; align-items: center; column-gap: 10px; }
+    .hobby .e { grid-row: 1 / 3; }
+    .hobby b { margin: 0; }
+    .socials { grid-template-columns: minmax(0, 1fr); }
+    .code { white-space: pre-wrap; }
+  }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .emoji-float { display: none; } }
+</style>
+</head>
+<body>
+<div class="emoji-float" aria-hidden="true"></div>
+
+<main class="slide">
+  <div class="bento">
+
+    <section class="tile hero" aria-labelledby="name">
+      <div class="me">
+        <button class="avatar" type="button" aria-label="Say hi" data-burst="👋✨🤖⚽🎹🎻">
+          <img src="avatar.jpg" alt="Praveen Govindaraj" width="200" height="200">
+          <span class="wave" aria-hidden="true">👋</span>
+        </button>
+        <div>
+          <p class="hello">// hello, world 🌏 · Singapore 🇸🇬</p>
+          <h1 id="name">I'm <em>Praveen</em> Govindaraj</h1>
+        </div>
+      </div>
+      <div class="roles">
+        <span class="role r1">🤖 Lead AI Engineer · Singtel</span>
+        <span class="role r2">🧠 Creator of Neam</span>
+        <span class="role r3">🛒 Builder of Sales Mama</span>
+        <span class="role r4">📚 Author</span>
+        <span class="role r5">🎤 Speaker &amp; 🎙️ podcaster</span>
+      </div>
+      <p class="bio">Data nerd turned <b>agent builder</b>. I design a programming language for AI agents, ship open-source tools that put agents to work for small businesses, and explain it all on YouTube. Off the keyboard: ⚽ football, 🎹 piano and 🎻 violin.</p>
+      <div class="socials">
+        <a class="soc s-gh" href="https://github.com/Praveengovianalytics"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></span><span>GitHub<small>code &amp; repos 💻</small></span></a>
+        <a class="soc s-in" href="https://www.linkedin.com/in/praveen-govindaraj-a2937915"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></span><span>LinkedIn<small>let's connect 🤝</small></span></a>
+        <a class="soc s-yt" href="https://www.youtube.com/@PraveenGovindaraj-ai-sparks"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></span><span>YouTube<small>AI Sparks ⚡</small></span></a>
+        <a class="soc s-pod" href="https://podcasts.apple.com/us/podcast/id1844072567"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M16.85 18.58a9 9 0 1 0-9.7 0"/><path d="M8 14a5 5 0 1 1 8 0"/><circle cx="12" cy="11" r="1"/><path d="M13 17a1 1 0 1 0-2 0l.5 4.5a.5.5 0 1 0 1 0Z"/></svg></span><span>Podcast<small>AI Sparks 🎙️</small></span></a>
+      </div>
+    </section>
+
+    <a class="tile neam" href="https://neam.dev" aria-label="Neam: the agentic AI programming language">
+      <span class="tag">🧠 my language</span>
+      <h2>Neam</h2>
+      <p>An agentic AI programming language: agents, tools and handoffs are part of the language, compiled to bytecode on its own runtime. I designed it from the VM up.</p>
+      <div class="code"><span class="k">agent</span> Helper {
+  provider: <span class="s">"openai"</span>,
+  model: <span class="s">"gpt-4o-mini"</span>,
+  system: <span class="s">"Be useful. Be kind. Ship it. 🚀"</span>
+}
+<span class="k">emit</span> Helper.ask(<span class="s">"Hi Praveen 👋"</span>);</div>
+      <div class="links"><span class="go">neam.dev <svg class="i" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span><span class="go" style="color:#fff">github.com/neam-lang</span></div>
+    </a>
+
+    <a class="tile mama" href="https://neam-lang.github.io/sales-mama.github.io/" aria-label="Sales Mama website">
+      <div style="display:flex;align-items:center;gap:10px"><span class="logo">SM</span><span class="tag">🛒 open source</span></div>
+      <h2>Sales Mama</h2>
+      <p class="muted">Signal to send. <em style="font-style:normal;color:var(--lime)">You approve each one.</em> A sales team in Claude Code for small businesses.</p>
+      <div class="score"><b>92.1</b><span>Sales Harness Score 🏆<br>rank 1 (tied) · 0 rule breaks</span></div>
+      <span class="go">take the tour <svg class="i" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+    </a>
+
+    <section class="tile books" aria-labelledby="books-h">
+      <span class="tag">📚 free ebooks</span>
+      <h2 id="books-h">Things I wrote 📝</h2>
+      <div class="shelf">
+        <a class="book b1" href="https://neam-lang.github.io/Neam-The-AI-Native-Programming-Language/"><span class="e">🧠</span><b>Programming Neam</b><small>the language book</small></a>
+        <a class="book b2" href="https://neam-lang.github.io/The-Intelligent-Data-Organization-with-Neam/"><span class="e">🏢</span><b>The Intelligent Data Organization</b><small>data teams × agents</small></a>
+        <a class="book b3" href="https://neam-lang.github.io/NeamCode-Handbook-Command-the-Future/"><span class="e">⌨️</span><b>Command the Future</b><small>NeamCode handbook</small></a>
+        <a class="book b4" href="https://neam-lang.github.io/The-Agentic-Development-Lifecycle/"><span class="e">🔁</span><b>The Agentic Development Lifecycle</b><small>SDLC → ADLC</small></a>
+      </div>
+    </section>
+
+    <section class="tile talks" aria-labelledby="talks-h">
+      <span class="tag">🎤 on stage</span>
+      <h2 id="talks-h">Talks</h2>
+      <div class="talk"><span class="e">🌏</span><span><b>Data Innovation Summit</b>speaker · Lead AI Engineer, Singtel</span></div>
+      <div class="talk"><span class="e">🛒</span><span><b>Sales Mama tech talk</b>agents that sell, with a human on approve</span></div>
+      <div class="talk"><span class="e">🏆</span><span><b>Sales Harness Bench</b>can you trust an agent with your pipeline?</span></div>
+    </section>
+
+    <a class="tile yt" href="https://www.youtube.com/@PraveenGovindaraj-ai-sparks" aria-label="YouTube channel">
+      <span class="tag">📺 youtube</span>
+      <h2>AI Sparks ⚡</h2>
+      <p>Agents, Claude Code, Neam and Sales Mama films. Grab popcorn 🍿</p>
+      <span class="go">watch now <svg class="i" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+      <span class="play" aria-hidden="true">▶️</span>
+    </a>
+
+    <section class="tile fun" aria-labelledby="fun-h">
+      <span class="tag">🎉 off the keyboard</span>
+      <h2 id="fun-h">When I'm not shipping agents…</h2>
+      <div class="hobbies">
+        <button class="hobby ball" type="button" data-burst="⚽🥅🏃‍♂️⚽"><span class="e">⚽</span><b>Football</b><small>weekend striker, eternal optimist</small></button>
+        <button class="hobby piano" type="button" data-burst="🎵🎶🎹🎼"><span class="e">🎹</span><b>Piano</b><small>88 keys, zero bugs</small></button>
+        <button class="hobby violin" type="button" data-burst="🎻🎶🎵✨"><span class="e">🎻</span><b>Violin</b><small>four strings, infinite practice</small></button>
+      </div>
+    </section>
+
+    <section class="tile colors" aria-labelledby="col-h">
+      <span class="tag">🎨 colour codes</span>
+      <h2 id="col-h">My palette</h2>
+      <div class="swatches">
+        <button class="sw" type="button" data-hex="#C8F031"><i style="background:#C8F031"></i><span>#C8F031<small>lime ⚡</small></span></button>
+        <button class="sw" type="button" data-hex="#6D28D9"><i style="background:#6D28D9"></i><span>#6D28D9<small>mama violet 💜</small></span></button>
+        <button class="sw" type="button" data-hex="#16131F"><i style="background:#16131F"></i><span>#16131F<small>ink 🖋️</small></span></button>
+        <button class="sw" type="button" data-hex="#BE185D"><i style="background:#BE185D"></i><span>#BE185D<small>stage pink 🎤</small></span></button>
+        <button class="sw" type="button" data-hex="#0F766E"><i style="background:#0F766E"></i><span>#0F766E<small>research teal 🔎</small></span></button>
+        <button class="sw" type="button" data-hex="#C2410C"><i style="background:#C2410C"></i><span>#C2410C<small>writer orange ✍️</small></span></button>
+      </div>
+    </section>
+
+  </div>
+</main>
+<p class="foot">Made in Singapore 🇸🇬 with Claude Code, ☕ and a little 🎻 · <a href="https://github.com/Praveengovianalytics/aboutme.io">source</a></p>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // floating emoji background
+    var box = document.querySelector('.emoji-float'), set = '🤖🧠⚽🎹🎻📚🎤⚡🛒✨🚀🎶';
+    if (!reduce) for (var i = 0; i < 16; i++) {
+      var s = document.createElement('span'); s.textContent = Array.from(set)[i % Array.from(set).length];
+      s.style.left = (Math.random() * 96) + '%'; s.style.animationDelay = (-Math.random() * 18) + 's'; s.style.animationDuration = (14 + Math.random() * 10) + 's';
+      box.appendChild(s);
+    }
+    // emoji bursts on the avatar and hobbies
+    function burst(el, chars) {
+      if (reduce) return;
+      var r = el.getBoundingClientRect(), list = Array.from(chars);
+      for (var k = 0; k < 8; k++) {
+        var n = document.createElement('span'); n.className = 'note'; n.textContent = list[k % list.length];
+        n.style.left = (r.left + r.width / 2 - 12) + 'px'; n.style.top = (r.top + r.height / 2 - 12) + 'px';
+        n.style.setProperty('--dx', ((Math.random() - .5) * 160) + 'px'); n.style.setProperty('--r', ((Math.random() - .5) * 90) + 'deg');
+        document.body.appendChild(n); setTimeout(function (x) { return function () { x.remove(); }; }(n), 1300);
+      }
+    }
+    document.querySelectorAll('[data-burst]').forEach(function (b) { b.addEventListener('click', function () { burst(b, b.getAttribute('data-burst')); }); });
+    // copy colour codes
+    var toast = document.querySelector('.toast'), t;
+    document.querySelectorAll('[data-hex]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var hex = b.getAttribute('data-hex');
+        var done = function () { toast.textContent = '🎨 ' + hex + ' copied!'; toast.classList.add('on'); clearTimeout(t); t = setTimeout(function () { toast.classList.remove('on'); }, 1500); };
+        if (navigator.clipboard) navigator.clipboard.writeText(hex).then(done, done); else done();
+      });
+    });
+  })();
+</script>
+</body>
+</html>
